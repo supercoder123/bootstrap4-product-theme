@@ -1,0 +1,212 @@
+/**variables */
+/**main ======================================================================*/
+html,
+body {
+  margin: 0; }
+
+/**overriding default button style*/
+.btn-primary {
+  background-color: #33afe5;
+  border: 0; }
+
+/**top and down padding for sections */
+.section-padding {
+  padding-top: 150px;
+  padding-bottom: 150px; }
+
+/**pricing table section =======================================================*/
+.pricing-table {
+  background: white; }
+
+/**header paragraph */
+.pricing-table header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: grey; }
+
+/**item card red heading */
+.card-heading {
+  text-align: center;
+  color: red;
+  padding-bottom: 10px; }
+
+/**single card item */
+.item-card {
+  background-color: #ffffff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.075);
+  border: 1px solid grey;
+  padding: 30px;
+  overflow: hidden;
+  position: relative; }
+
+/**card ribbon in middle card*/
+.ribbon {
+  width: 160px;
+  height: 32px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 0px 2px 3px rgba(136, 136, 136, 0.25);
+  background: #33afe5;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -42px;
+  top: 20px;
+  padding-top: 7px; }
+
+/**item card list  */
+.pricing-table .features h4 {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 5px; }
+
+/**item card price */
+.pricing-table .price h4 {
+  font-size: 2.5rem;
+  text-align: center; }
+
+/** dollar sign superscript */
+sup {
+  top: -0.7rem;
+  font-size: 1.5rem; }
+
+/**price month */
+.price-month {
+  font-size: 1.2rem; }
+
+@media screen and (max-width: 576px) {
+  .item-card {
+    margin-left: 10px;
+    margin-right: 10px; } }
+
+/** people card section ======================================================= */
+.people {
+  background-color: #33afe5; }
+
+/**header text */
+.people header {
+  color: white; }
+
+/**header paragraph text */
+.people header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto; }
+
+/**card text paragraph */
+.people .card-body > p {
+  font-size: 1.2rem; }
+
+/**person name in blue color */
+.people .card-body h4 {
+  color: #33afe5; }
+
+/**animation for card */
+.people .card {
+  transition: all 0.5s; }
+
+.people .card:hover {
+  transition: all 0.5s;
+  transform: scale(1.05);
+  box-shadow: 2px 2px 8px #2b2727; }
+
+/**free black strip section =======================================================*/
+.free {
+  background-color: black; }
+
+/**section text */
+.free .row p {
+  font-size: 2.2rem;
+  margin-left: 100px; }
+
+/**button */
+.free .row a {
+  font-size: 1.4rem; }
+
+.btn-free {
+  background-color: #00ccff;
+  color: #333333; }
+
+/**for mobile screens */
+@media screen and (max-width: 576px) {
+  .free .row a {
+    display: block;
+    margin-left: 0;
+    padding-left: 0; }
+  /**section text */
+  .free .row p {
+    margin-left: 20px; } }
+
+/**tablets */
+@media screen and (max-width: 768px) {
+  .free .row a {
+    display: block;
+    margin-left: 0;
+    padding-left: 0; }
+  /**section text */
+  .free .row p {
+    margin-left: 20px; } }
+
+/**feedback section ===============================================================*/
+.feedback {
+  background-color: white; }
+
+.feedback header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: grey; }
+
+/** form */
+form {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 100px; }
+
+form textarea {
+  resize: none; }
+
+form button {
+  margin: auto; }
+
+/** map section =============================================================*/
+.map {
+  background-image: url("../img/maps.jpg");
+  min-height: 392px;
+  z-index: 1; }
+
+.map-strip {
+  position: absolute;
+  left: 0;
+  margin-top: 320px;
+  width: 100%;
+  height: 50px;
+  padding-top: 15px;
+  background-color: #2ea8fa;
+  opacity: 0.9;
+  color: white;
+  z-index: 10;
+  text-align: center; }
+
+/**footer====================================================================== */
+.footer {
+  background-color: white;
+  margin-bottom: 50px; }
+
+.footer .fa {
+  padding: 10px;
+  background-color: #33afe5;
+  color: white;
+  font-size: 1.5rem;
+  margin: 5px;
+  transition: all 0.5s; }
+  .footer .fa.fa-facebook {
+    padding-left: 10px;
+    padding-right: 20px; }
+
+.footer .fa:hover {
+  transition: all 0.5s;
+  color: black;
+  background: red; }
