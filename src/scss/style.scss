@@ -55,6 +55,11 @@ nav button {
   }
 }
 
+nav a.navbar-brand-text {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 /**navbar links */
 #navbarNav ul li a {
   color: white;

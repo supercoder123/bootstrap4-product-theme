@@ -890,8 +890,8 @@ inv 		= Inverse Behaver of buttons
 .hb-tencent-weibo:hover,
 .hb-tencent-weibo:hover:before,
 .hb-tencent-weibo:hover:after {
-  background: transparent;
-  border-color: #20b8e5;
+  background: yellow;
+  border-color: white;
   color: #20b8e5;
 }
 

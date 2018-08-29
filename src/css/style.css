@@ -39,6 +39,10 @@ nav button {
   nav button .fa {
     margin-top: -4px; }
 
+nav a.navbar-brand-text {
+  cursor: pointer;
+  text-decoration: none; }
+
 /**navbar links */
 #navbarNav ul li a {
   color: white; }
