@@ -46,13 +46,13 @@
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#pricing">Pricing</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#strip">Products</a>
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonial">Testimonials</a>
@@ -119,7 +119,7 @@
     <!-- carousel end -->
 
     <!-- brand section start -->
-    <section id="brands" class="brands-section">
+    <section id="about" class="brands-section">
         <div class="container">
             <div class="col d-flex flex-wrap align-items-around text-center">
                 <!-- brand logos -->
@@ -136,7 +136,7 @@
     <!-- brand section end -->
 
     <!-- atom features section -->
-    <section class="atom-features section-padding">
+    <section id="features" class="atom-features section-padding">
         <div class="container">
             <!-- header for features section -->
             <header class="text-center mb-5">
@@ -206,7 +206,7 @@
     <!-- atom features section end -->
 
     <!-- portfolio grid section -->
-    <section class="portfolio-grid section-padding-bottom">
+    <section id="products" class="portfolio-grid section-padding-bottom">
         <div class="container">
             <!-- stats -->
             <div class="row mb-5">
@@ -611,7 +611,6 @@
         $('.carousel').carousel({
             interval: 2000,
             keyboard: true,
-            pause: 'hover',
             wrap: true
         });
 
@@ -628,7 +627,8 @@
                 }
             })
 
-            let offsetHeight = 10;
+            //scrollspy
+            let offsetHeight = 75;
             $('body').scrollspy({
                 target: '#navScroll',
                 offset: offsetHeight
