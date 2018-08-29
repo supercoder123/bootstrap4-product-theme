@@ -16,7 +16,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar fixed-top  navbar-expand-lg bg-transparent mb-3">
+    <nav id="navScroll" class="navbar fixed-top  navbar-expand-lg bg-transparent mb-3">
         <div class="container">
             <a class="navbar-brand" href="#" class="text-center">
                 <div class="d-flex">
@@ -33,7 +33,6 @@
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon">
                     <i class="fa fa-navicon"></i>
-
                 </span>
             </button>
             <!-- collapse button -->
@@ -41,45 +40,56 @@
                 <!-- navbar items -->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#strip">Products</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#testimonial">Testimonials</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
-
                 </ul>
             </div>
         </div>
     </nav>
+    <!-- navbar ends -->
 
     <!-- carousel -->
-    <section>
+    <section id="home">
         <main class="start-section">
             <div class="overlay"></div>
-            <div class="carousel slide mb-5" data-ride="carousel">
+            <div id="slider" class="carousel slide mb-5" data-ride="carousel">
+                <!-- carousel indicators -->
                 <ol class="carousel-indicators">
-                    <li class="active" data-target="#slider3" data-slide-to="0"></li>
-                    <li data-target="#slider3" data-slide-to="1"></li>
-                    <li data-target="#slider3" data-slide-to="2"></li>
+                    <li class="active" data-target="#slider" data-slide-to="0"></li>
+                    <li data-target="#slider" data-slide-to="1"></li>
+                    <li data-target="#slider" data-slide-to="2"></li>
+                    <li data-target="#slider" data-slide-to="3"></li>
                 </ol>
+                <!-- carousel slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
-                        <div class="d-flex flex-column text-white carousel-caption d-none d-md-block">
+                        <div class="d-flex flex-column text-white carousel-caption my-auto align-middle d-none d-md-block">
+                            <h2>We design and develop quality Products to help small and medium size businesses
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia, quisquam aliquam
+                                dolorem recusandae rerum pariatur placeat porro officiis eum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column text-white carousel-caption my-auto align-middle d-none d-md-block">
                             <h2>We design and develop quality Products to help small and medium size businesses
                             </h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia, quisquam aliquam
@@ -103,22 +113,13 @@
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </main>
     </section>
 
-
-
-
-
-
-
     <!-- pricing table section -->
     <section id="pricing" class="pricing-table section-padding">
         <div class="container">
-
             <!-- header for pricing table section -->
             <header class="text-center mb-5">
                 <!-- hexagon logo : uses hexagons.css library-- hb-md-margin,hb,inv..etc are classes from hexagon.css -->
@@ -346,7 +347,7 @@
 
 
     <!-- free black strip section  -->
-    <section class="free">
+    <section id="strip" class="free">
         <div class="container-fluid">
             <div class="row text-white d-flex py-3">
                 <!-- text  -->
@@ -363,7 +364,7 @@
     <!-- free black strip section ends -->
 
     <!-- feedback section -->
-    <section class="feedback section-padding pb-5">
+    <section id="contact" class="feedback section-padding pb-5">
         <div class="container">
             <!-- header for pricing table section -->
             <header class="text-center pb-5">
@@ -429,7 +430,7 @@
     <script>
         //carousel slides
         $('.carousel').carousel({
-            interval: 3000,
+            interval: 2000,
             keyboard: true,
             pause: 'hover',
             wrap: true
@@ -446,6 +447,12 @@
                 else {
                     $("nav").addClass("bg-transparent");
                 }
+            })
+
+            let offsetHeight = 10;
+            $('body').scrollspy({
+                target: '#navScroll',
+                offset: offsetHeight
             })
         })
     </script>
