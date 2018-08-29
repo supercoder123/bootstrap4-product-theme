@@ -47,7 +47,7 @@
                         <a class="nav-link" href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Features</a>
@@ -56,7 +56,7 @@
                         <a class="nav-link" href="#">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Testimonials</a>
+                        <a class="nav-link" href="#testimonial">Testimonials</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
@@ -116,7 +116,7 @@
 
 
     <!-- pricing table section -->
-    <section class="pricing-table section-padding">
+    <section id="pricing" class="pricing-table section-padding">
         <div class="container">
 
             <!-- header for pricing table section -->
@@ -249,7 +249,7 @@
     <!-- pricing table section ends -->
 
     <!-- cards with people testimonial  -->
-    <section class="people section-padding">
+    <section id="testimonial" class="people section-padding">
         <div class="container">
             <!-- header for pricing table section -->
             <header class="text-center pb-5">
@@ -427,12 +427,27 @@
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/navbar-fixed.js"></script>
     <script>
+        //carousel slides
         $('.carousel').carousel({
             interval: 3000,
             keyboard: true,
             pause: 'hover',
             wrap: true
         });
+
+        //navbar color change
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                var scroll = $(window).scrollTop();
+                if (scroll > 550) {
+                    $("nav").removeClass("bg-transparent");
+                    $("nav").css("background-color", "#33afe5");
+                }
+                else {
+                    $("nav").addClass("bg-transparent");
+                }
+            })
+        })
     </script>
 
 </body>
