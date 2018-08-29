@@ -1,4 +1,4 @@
-# Assignment
+# Upstox Assignment
 
 NOTE: I have not used exact images
 
@@ -9,8 +9,8 @@ Live URL : [here](https://supercoder123.github.io/xxx/)
 - fully responsive
 - CSS3 cloud animation at the end
 - Smooth scrolling on navbar click
-- scrollspy
-- hover animations
+- navbar Scrollspy
+- hover animations in features,products,testmonials,footer icons
 
 ### Installation
 

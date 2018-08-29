@@ -15,7 +15,8 @@
 </head>
 
 <body>
-    <!-- navbar -->
+
+    <!-- navbar ------------------------------------------------------------------------->
     <nav id="navScroll" class="navbar fixed-top  navbar-expand-lg bg-transparent mb-3">
         <div class="container">
             <a class="navbar-brand" href="#" class="text-center">
@@ -64,9 +65,11 @@
             </div>
         </div>
     </nav>
-    <!-- navbar ends -->
+    <!-- navbar ends ------------------------------------------->
 
-    <!-- carousel -->
+
+
+    <!-- carousel -------------------------------------------------------------------------->
     <section id="home">
         <main class="start-section">
             <div class="overlay"></div>
@@ -116,9 +119,11 @@
             </div>
         </main>
     </section>
-    <!-- carousel end -->
+    <!-- carousel end --------------------------------------->
 
-    <!-- brand section start -->
+
+
+    <!-- brand section start -------------------------------------------------------------->
     <section id="about" class="brands-section">
         <div class="container">
             <div class="col d-flex flex-wrap align-items-around text-center">
@@ -133,9 +138,11 @@
             </div>
         </div>
     </section>
-    <!-- brand section end -->
+    <!-- brand section end ------------------------------->
 
-    <!-- atom features section -->
+
+
+    <!-- atom features section ---------------------------------------------------------------------->
     <section id="features" class="atom-features section-padding">
         <div class="container">
             <!-- header for features section -->
@@ -200,15 +207,17 @@
                     </div>
                 </div>
             </div>
-            <!-- features grid end -->
+            <!-- features grid end ---------------------->
         </div>
     </section>
-    <!-- atom features section end -->
+    <!-- atom features section end ------------------------------->
 
-    <!-- portfolio grid section -->
+
+
+    <!-- portfolio grid section --------------------------------------------------------------------------->
     <section id="products" class="portfolio-grid section-padding-bottom">
         <div class="container">
-            <!-- stats -->
+            <!-- stats -------------------------------------------------------------------->
             <div class="row mb-5">
                 <div class="col-md-3 col-lg-3 border text-center border-top-0 text-stats">
                     <i class="fa fa-thumbs-o-up"></i>
@@ -231,9 +240,9 @@
                     <p class="display-1">10</p>
                 </div>
             </div>
-            <!-- stats end -->
+            <!-- stats end ------------------->
 
-            <!-- header for portfolio section -->
+            <!-- header for portfolio section ----------------------------------------------------->
             <header class="text-center mb-5">
                 <!-- hexagon logo : uses hexagons.css library-- hb-md-margin,hb,inv..etc are classes from hexagon.css -->
                 <a href="#" class="hb-md-margin">
@@ -289,14 +298,14 @@
                     <div class="card-overlay">Processing Steps web</div>
                 </div>
             </div>
-            <!-- grid ends -->
+            <!-- grid ends ------------------------>
         </div>
     </section>
-    <!-- portfolio grid section end -->
+    <!-- portfolio grid section end --------------------------------->
 
 
 
-    <!-- pricing table section -->
+    <!-- pricing table section ------------------------------------------------------------------>
     <section id="pricing" class="pricing-table section-padding">
         <div class="container">
             <!-- header for pricing table section -->
@@ -420,15 +429,17 @@
                             <button class="btn btn-outline-dark rounded-0 px-5" type="submit">SIGN UP</button>
                         </div>
                     </div>
-                    <!--card item ends -->
+                    <!--card item ends ----------------->
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <!-- pricing table section ends -->
+    <!-- pricing table section ends -------------------------->
 
-    <!-- cards with people testimonial  -->
+
+
+    <!-- cards with people testimonial  ---------------------------------------------------------------->
     <section id="testimonial" class="people section-padding">
         <div class="container">
             <!-- header for testimonial section -->
@@ -522,10 +533,11 @@
             </div>
         </div>
     </section>
-    <!-- people card section ends -->
+    <!-- people card section ends ---------------------------------------->
 
 
-    <!-- free black strip section  -->
+
+    <!-- free black strip section  ------------------------------------------------------------->
     <section id="strip" class="free">
         <div class="container-fluid">
             <div class="row text-white d-flex py-3">
@@ -540,9 +552,11 @@
             </div>
         </div>
     </section>
-    <!-- free black strip section ends -->
+    <!-- free black strip section ends ------------------->
 
-    <!-- feedback section -->
+
+
+    <!-- feedback section------------------------------------------------------------------- -->
     <section id="contact" class="feedback section-padding pb-5">
         <div class="container">
             <!-- header for feedback section -->
@@ -572,9 +586,10 @@
             </form>
         </div>
     </section>
-    <!-- feedback section ends -->
+    <!-- feedback section ends --------------------------------->
 
-    <!-- cloud section -->
+
+    <!-- cloud section ------------------------------------------------------------>
     <section class="map">
         <div class="cloud-background">
             <div class="cloud-strip">
@@ -582,9 +597,10 @@
             </div>
         </div>
     </section>
-    <!-- cloud section ends -->
+    <!-- cloud section ends --------------------------->
 
-    <!-- footer -->
+
+    <!-- footer -------------------------------------------------------------------->
     <footer class="footer py-5">
         <div class="container text-center">
             <div class="d-flex flex-column">
@@ -601,11 +617,17 @@
             </div>
         </div>
     </footer>
+    <!-- footer ends ---------------------------->
 
     <script src="src/js/jquery.min.js"></script>
     <script src="src/js/bootstrap.min.js"></script>
     <script src="src/js/popper.min.js"></script>
+    <!-- smooth jump to section -->
     <script src="src/js/navbar-fixed.js"></script>
+    <!-- fade in animations -->
+    <script src="src/js/wow.min.js"></script>
+
+    <!-- own scripts -->
     <script>
         //carousel slides
         $('.carousel').carousel({
@@ -632,6 +654,7 @@
                 offset: offsetHeight
             })
 
+            //remove default click from hexagonal buttons
             $('.hb').click(function (e) {
                 e.preventDefault();
             });
