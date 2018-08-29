@@ -224,8 +224,19 @@ p.display-1 {
   transition: all 0.5s ease;
 }
 
-/** description  on portfolio cards */
+/**responsive for button group */
+@media screen and (max-width: 576px) {
+  #filter {
+    padding-left: 5px;
+  }
+  #filter-group {
+    font-size: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
+/** description  on portfolio cards */
 @media screen and (max-width: 576px) {
   .portfolio-grid .row .btn-group .btn-outline-secondary {
     margin-left: 0 !important;
