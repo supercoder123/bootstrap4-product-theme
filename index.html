@@ -15,6 +15,106 @@
 </head>
 
 <body>
+    <!-- navbar -->
+    <nav class="navbar fixed-top  navbar-expand-lg bg-transparent mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="#" class="text-center">
+                <div class="d-flex">
+                    <a href="#" class="mt-2 align-middle">
+                        <!-- hexagon "a" logo from hexagon.css library -->
+                        <span class="hb inv hb-xs hb-tencent-weibo">
+                            <i class="fa font-weight-bold">a</i>
+                        </span>
+                    </a>
+                    <h1 class="font-weight-bold text-white pl-1">tom
+                    </h1>
+                </div>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-navicon"></i>
+
+                </span>
+            </button>
+            <!-- collapse button -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- navbar items -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- carousel -->
+    <section>
+        <main class="start-section">
+            <div class="overlay"></div>
+            <div class="carousel slide mb-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#slider3" data-slide-to="0"></li>
+                    <li data-target="#slider3" data-slide-to="1"></li>
+                    <li data-target="#slider3" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column text-white carousel-caption d-none d-md-block">
+                            <h2>We design and develop quality Products to help small and medium size businesses
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia, quisquam aliquam
+                                dolorem recusandae rerum pariatur placeat porro officiis eum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column text-white carousel-caption d-none d-md-block">
+                            <h2>We design and develop quality Products to help small and medium size businesses
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia, quisquam aliquam
+                                dolorem recusandae rerum pariatur placeat porro officiis eum.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column text-white carousel-caption d-none d-md-block">
+                            <h2>We design and develop quality Products to help small and medium size businesses
+                            </h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores officia, quisquam aliquam
+                                dolorem recusandae rerum pariatur placeat porro officiis eum.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </main>
+    </section>
+
+
+
+
+
+
+
     <!-- pricing table section -->
     <section class="pricing-table section-padding">
         <div class="container">
@@ -297,7 +397,7 @@
     <!-- cloud section -->
     <section class="map">
         <div class="cloud-background">
-            <div class="map-strip">
+            <div class="cloud-strip">
                 Cloud CSS3 keyframe animation
             </div>
         </div>
@@ -327,8 +427,11 @@
     <script src="src/js/popper.min.js"></script>
     <script src="src/js/navbar-fixed.js"></script>
     <script>
-        $('a').click(function (e) {
-            e.preventDefault();
+        $('.carousel').carousel({
+            interval: 3000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
         });
     </script>
 
