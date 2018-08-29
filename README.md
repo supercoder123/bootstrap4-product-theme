@@ -1,18 +1,21 @@
-# Bootstrap 4 boilerplate   
+# Assignment
 
-Contains pre-configured utilities to speed up development of bootstrap websites.
+NOTE: I have not used exact images
+
+Live URL : [here](https://supercoder123.github.io/xxx/)
 
 #### Features:
-- Index.html in root for easy deployment on github pages
-- Builds all required libraries required for bootstrap from source so no need of cdn's
-- BrowserSync for live reloading 
-- Smooth Scrolling on navbar item click (navbar-fixed.js)
-- Gulp support
-- Sass support by using gulp-sass
 
-### Installation 
+- fully responsive
+- CSS3 cloud animation at the end
+- Smooth scrolling on navbar click
+- scrollspy
+- hover animations
+
+### Installation
+
 Clone the repo  
-`git clone https://github.com/supercoder123/bootstrap-4-boilerplate.git`
+`git clone https://github.com/supercoder123/xxx.git`
 
 Install dependencies  
 `npm install`
@@ -21,4 +24,3 @@ Run server
 `npm run start`
 
 Website will now be running at localhost:3000
-# xxx

@@ -88,7 +88,7 @@
                                 dolorem recusandae rerum pariatur placeat porro officiis eum.</p>
                         </div>
                     </div>
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="d-flex flex-column text-white carousel-caption my-auto align-middle d-none d-md-block">
                             <h2>We design and develop quality Products to help small and medium size businesses
                             </h2>
@@ -144,7 +144,7 @@
                 <a href="#" class="hb-md-margin">
                     <!-- using skype color as it is closest to given psd -->
                     <span class="hb inv hb-md hb-skype-inv">
-                        <i class="fa font-weight-bold">a</i>
+                        <i class="fa font-weight-bold mb-4">a</i>
                     </span>
                 </a>
                 <!-- title for the section -->
@@ -609,9 +609,7 @@
     <script>
         //carousel slides
         $('.carousel').carousel({
-            interval: 2000,
-            keyboard: true,
-            wrap: true
+            interval: 2000
         });
 
         //navbar color change
@@ -633,6 +631,10 @@
                 target: '#navScroll',
                 offset: offsetHeight
             })
+
+            $('.hb').click(function (e) {
+                e.preventDefault();
+            });
         })
     </script>
 
