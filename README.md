@@ -12,6 +12,7 @@ Live URL : [here](https://supercoder123.github.io/xxx/)
 - navbar Scrollspy
 - navbar color change on scroll
 - hover animations in features,products,testmonials,footer icons
+- animated haxagon buttons
 
 ### Installation
 
