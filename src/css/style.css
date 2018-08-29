@@ -11,8 +11,8 @@ body {
 
 /**top and down padding for sections */
 .section-padding {
-  padding-top: 150px;
-  padding-bottom: 150px; }
+  padding-top: 120px;
+  padding-bottom: 120px; }
 
 /**main section with navbar =============================================================== */
 nav.navbar-dark {
@@ -82,6 +82,32 @@ nav button {
   background-color: #f0f0f0; }
   .brands-section img {
     filter: grayscale(200%); }
+
+@media screen and (max-width: 576px) {
+  .brands-section {
+    background-color: #f0f0f0; }
+    .brands-section img {
+      filter: grayscale(200%); } }
+
+/**atom features section ========================================================== */
+.atom-features {
+  background-color: white; }
+
+.atom-features header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: grey; }
+
+/**portfolio grid section ===================================================== */
+.portfolio-grid {
+  background-color: #f0f0f0; }
+
+.portfolio-grid header p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: auto;
+  color: grey; }
 
 /**pricing table section =======================================================*/
 .pricing-table {
@@ -218,7 +244,7 @@ sup {
   .free .row p {
     margin-left: 20px; } }
 
-/**feedback section ===============================================================*/
+/**feedback contact section ===============================================================*/
 .feedback {
   background-color: white; }
 
