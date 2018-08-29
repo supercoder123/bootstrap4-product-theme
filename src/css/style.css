@@ -77,6 +77,12 @@ nav button {
   border: 1px solid white;
   border-radius: 100%; }
 
+/**brands section ===================================================== */
+.brands-section {
+  background-color: #f0f0f0; }
+  .brands-section img {
+    filter: grayscale(200%); }
+
 /**pricing table section =======================================================*/
 .pricing-table {
   background: white; }

@@ -101,6 +101,15 @@ nav button {
   border-radius: 100%;
 }
 
+/**brands section ===================================================== */
+
+.brands-section {
+  background-color: #f0f0f0;
+  img {
+    filter: grayscale(200%);
+  }
+}
+
 /**pricing table section =======================================================*/
 .pricing-table {
   background: white;
