@@ -22,6 +22,9 @@ body {
   padding-top: $section-padding;
   padding-bottom: $section-padding;
 }
+.section-padding-bottom {
+  padding-bottom: $section-padding;
+}
 
 /**main section with navbar =============================================================== */
 nav {
@@ -132,9 +135,41 @@ nav button {
   color: grey;
 }
 
+.atom-features .row .fa {
+  font-size: 2rem;
+}
+
+.features-item {
+  max-width: 200px;
+}
+
 /**portfolio grid section ===================================================== */
 .portfolio-grid {
   background-color: #f0f0f0;
+}
+
+.portfolio-grid .row .fa {
+  padding-top: 40px;
+  color: grey;
+  font-size: 4rem;
+}
+
+.text-stats p {
+  color: grey;
+  font-size: 1.5rem;
+}
+
+.text-stats:hover {
+  background-color: #f5f5f5;
+  .fa {
+    color: $base;
+  }
+}
+
+/**year */
+p.display-1 {
+  color: $base;
+  font-size: 4rem !important;
 }
 
 .portfolio-grid header p {
@@ -164,7 +199,7 @@ nav button {
   top: 32px;
   color: white;
   opacity: 0;
-  padding-top: 65px;
+  padding-top: 95px;
   width: calc(100% - 32px);
   height: calc(100% - 65px);
   background-color: $base;
