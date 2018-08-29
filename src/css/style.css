@@ -102,12 +102,25 @@ nav button {
   margin: auto;
   color: grey; }
 
+.atom-features .row .fa {
+  font-size: 2.8rem;
+  color: gray; }
+
 .features-item {
-  max-width: 200px; }
+  font-size: 1rem; }
+
+.features-item p:first-child {
+  color: #33afe5;
+  font-size: 1.2rem; }
+
+.features-item:hover {
+  background-color: #f0f0f0; }
+  .features-item:hover .fa {
+    color: #33afe5; }
 
 /**portfolio grid section ===================================================== */
 .portfolio-grid {
-  background-color: #f0f0f0; }
+  background-color: #f7f7f7; }
 
 .portfolio-grid .row .fa {
   padding-top: 40px;

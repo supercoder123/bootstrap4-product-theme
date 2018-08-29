@@ -136,16 +136,29 @@ nav button {
 }
 
 .atom-features .row .fa {
-  font-size: 2rem;
+  font-size: 2.8rem;
+  color: gray;
 }
 
 .features-item {
-  max-width: 200px;
+  font-size: 1rem;
+}
+
+.features-item p:first-child {
+  color: $base;
+  font-size: 1.2rem;
+}
+
+.features-item:hover {
+  background-color: #f0f0f0;
+  .fa {
+    color: $base;
+  }
 }
 
 /**portfolio grid section ===================================================== */
 .portfolio-grid {
-  background-color: #f0f0f0;
+  background-color: #f7f7f7;
 }
 
 .portfolio-grid .row .fa {
