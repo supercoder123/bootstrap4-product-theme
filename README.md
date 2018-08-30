@@ -1,6 +1,6 @@
 # Assignment
 
-NOTE: I have not used exact images. I have rearranged the order of navbar links so as to follow proper sequence.
+NOTE: I have not used exact images and I have rearranged the order of navbar links so as to follow proper sequence.
 
 Live URL : [here](https://supercoder123.github.io/xxx/)
 
@@ -12,7 +12,7 @@ Live URL : [here](https://supercoder123.github.io/xxx/)
 - navbar Scrollspy
 - navbar color change on scroll
 - hover animations in features,products,testmonials,footer icons
-- animated haxagon buttons
+- animated hexagon icons
 
 ### Installation
 
