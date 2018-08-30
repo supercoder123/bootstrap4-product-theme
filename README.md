@@ -1,4 +1,4 @@
-# Upstox Assignment
+# Assignment
 
 NOTE: I have not used exact images. I have rearranged the order of navbar links so as to follow proper sequence.
 
