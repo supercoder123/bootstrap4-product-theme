@@ -1,4 +1,4 @@
-# Assignment
+# Bootstrap 4 Product Theme
 
 NOTE: I have not used exact images and I have rearranged the order of navbar links so as to follow proper sequence.
 
@@ -17,7 +17,7 @@ Live URL : [here](https://supercoder123.github.io/bootstrap4-product-theme/)
 ### Installation
 
 Clone the repo  
-`git clone https://github.com/supercoder123/xxx.git`
+`git clone https://github.com/supercoder123/bootstrap4-product-theme.git`
 
 Install dependencies  
 `npm install`
